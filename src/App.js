@@ -3,6 +3,7 @@ import Character from "./character";
 function App() {
     return (
     <div>
+
       <Character name={'Bart'}
                  desc={'Bartholomew "Bart" Jojo Simpson (born April 1[7] or February 23[8]) is the mischievous, rebellious, misunderstood, disruptive and "potentially dangerous" oldest child of the Simpson family in The Simpsons. '}
                  picture = {'https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png'}/>
