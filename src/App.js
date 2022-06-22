@@ -3,13 +3,13 @@ import React, { useEffect,useState } from "react";
 
 
 export default function App() {
-    const [users, setUsers] = useState([]);
+    const [items, setItems] = useState([]);
 
     useEffect(() => {
         fetch('https://rickandmortyapi.com/api/character')
             .then(value => value.json())
             .then((value) => {
-                setUsers(value);
+                setItems(value);
                 console.log(value);
             })
     },[])
@@ -17,7 +17,7 @@ export default function App() {
     return (
         <div>
             {
-                users.map(value => <Character id={value.id} name ={value.name} status={value.status}/>)
+                items.map(value => <Character id={value.id} name ={value.name} status={value.status}/>)
             }
         </div>
     );
