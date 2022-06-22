@@ -1,5 +1,5 @@
-export default function Character(props){
-    let {item: {id, name, status, species, gender, image}} = props;
+export default function Character(props) {
+    const {id, name, status, species, gender, image} = props;
 
     return(
 

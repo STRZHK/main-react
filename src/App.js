@@ -8,7 +8,7 @@ export default function App() {
     useEffect(() => {
         fetch('https://rickandmortyapi.com/api/character')
             .then(value => value.json())
-            .then(value => {
+            .then((value) => {
                 setUsers(value);
                 console.log(value);
             })
@@ -16,13 +16,9 @@ export default function App() {
 
     return (
         <div>
-
             {
-                users.map(value => <Character key={value.id}
-                item={value.name}
-                status={value.status}/>)
+                users.map(value => <Character id={value.id} name ={value.name} status={value.status}/>)
             }
-
         </div>
     );
 }
