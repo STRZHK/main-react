@@ -1,8 +1,11 @@
 export default function User(props) {
-    let {item} = props;
+    let {item, choose} = props;
     return (
         <div>
-            {item.id}. {item.name}
+            {item.id}. {item.name} >>
+            <button onClick={()=>{
+                choose(item);
+            }}>more details</button>
         </div>
     )
 }
