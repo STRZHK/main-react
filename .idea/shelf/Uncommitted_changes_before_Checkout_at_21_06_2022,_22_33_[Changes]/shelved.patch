@@ -1,0 +1,42 @@
+Index: src/character.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>export default function Character(props){\n    console.log(props);\n    let {name, desc, picture} = props;\n\n    return(\n        <div>\n            <h2>{name}</h2>\n            <p>{desc}</p>\n            <img src={picture} alt=\"bart\"/>\n        </div>\n    )\n}
+===================================================================
+diff --git a/src/character.js b/src/character.js
+--- a/src/character.js	
++++ b/src/character.js	
+@@ -1,12 +1,28 @@
++// export default function Character(props){
++//     console.log(props);
++//     let {name, desc, picture} = props;
++//
++//     return(
++//         <div>
++//             <h2>{name}</h2>
++//             <p>{desc}</p>
++//             <img src={picture} alt="bart"/>
++//         </div>
++//     )
++// }
++
+ export default function Character(props){
+-    console.log(props);
+-    let {name, desc, picture} = props;
++    let {id, name, desc, species, gender, image} = props;
+ 
+     return(
+         <div>
++            <p>{id}</p>
+             <h2>{name}</h2>
+             <p>{desc}</p>
+-            <img src={picture} alt="bart"/>
++            <p>{species}</p>
++            <p>{gender}</p>
++            <p>{id}</p>
++            <img src={image} alt=""/>
+         </div>
+     )
+-}
+\ No newline at end of file
++}
