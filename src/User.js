@@ -1,3 +1,4 @@
+// THAT IS FOR TASK 1
 export default function User(props) {
     let {item, choose} = props;
     return (
