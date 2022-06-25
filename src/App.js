@@ -58,7 +58,7 @@ export default function App() {
                     <li>
                         {filteredLaunch.launch_year} { }
                         {filteredLaunch.mission_name} {  }
-                        {filteredLaunch.links.mission_patch_small}
+                        <img src={filteredLaunch.links.mission_patch_small}/>
                     </li>
                 ))}
         </div>
